@@ -33,7 +33,11 @@
             <!-- Título da seção de contato -->
             <h2>Fale Comigo</h2>
             <!-- Formulário de contato -->
-           <form method="post" action="/receber_dados.php">
+           <form action="https://formsubmit.co/cinthiaams@gmail.com" method="POST">
+                <!-- Desabilita o reCAPTCHA -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Define a página de redirecionamento após o envio -->
+                <input type="hidden" name="_next" value="thankyou.html">
                 <!-- Campo para o nome -->
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
