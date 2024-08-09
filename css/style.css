@@ -1,0 +1,311 @@
+/* Reset de margens e preenchimentos, e uso de border-box para 
+incluir bordas e preenchimento nas dimensões do elemento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo do documento */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    background-color: #f4f4f4; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    background-image: url('../img/Fundo\ Binarios.png'); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a área do fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima para cobrir a tela inteira */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #edadc9; /* Cor de fundo do cabeçalho */
+    color: #000; /* Cor do texto no cabeçalho */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o título no cabeçalho */
+header h1 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo para a lista de navegação */
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento */
+    display: flex;
+    justify-content: center; /* Centraliza itens na horizontal */
+}
+
+/* Estilo para itens da lista de navegação */
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre itens */
+}
+
+/* Estilo para links da navegação */
+nav ul li a {
+    color: #fff; /* Cor do texto */
+    background-color: #e37ca8; /* Cor de fundo */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+/* Efeito de hover para links da navegação */
+nav ul li a:hover {
+    background-color: #c92c60; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para a seção principal */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(255, 255, 255, 0.932); /* Cor de fundo com transparência */
+    margin: 20px auto; /* Centraliza horizontalmente com margem vertical */
+    max-width: 800px; /* Largura máxima */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos para a seção de introdução */
+.introduction {
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo para o título da introdução */
+.introduction h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #e37ca8; /* Cor do texto */
+}
+
+/* Estilo para o parágrafo da introdução */
+.introduction p {
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #edadc9; /* Cor de fundo */
+    color: #000; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento interno */
+    width: 100%; /* Largura total */
+    position: relative;
+    bottom: 0; /* Posiciona no fundo */
+    left: 0; /* Alinha à esquerda */
+}
+
+/* Estilo para o parágrafo do rodapé */
+footer p {
+    margin: 0; /* Remove margens */
+}
+
+/* Estilos para imagens */
+img {
+    max-width: 80%; /* Largura máxima */
+    height: auto; /* Altura automática para manter proporção */
+    margin-top: 10px; /* Espaçamento superior */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos para a seção sobre mim */
+.sobre-mim {
+    display: flex;
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça itens igualmente */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos para imagens na seção sobre mim */
+.sobre-mim img {
+    max-width: 40%; /* Largura máxima */
+    height: auto; /* Altura automática para manter proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-right: 20px; /* Espaçamento à direita */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para a descrição na seção sobre mim */
+.sobre-mim .descricao {
+    flex: 1; /* Ocupar espaço restante */
+    text-align: left; /* Alinha texto à esquerda */
+}
+
+/* Estilo para o título na descrição da seção sobre mim */
+.sobre-mim .descricao h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #e37ca8; /* Cor do texto */
+}
+
+/* Estilo para o parágrafo na descrição da seção sobre mim */
+.sobre-mim .descricao p {
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para a seção de educação */
+.educacao {
+    display: flex;
+    flex-direction: row; /* Organiza elementos em linha */
+    align-items: flex-start; /* Alinha itens no início */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: left; /* Alinha texto à esquerda */
+    margin: 20px auto; /* Centraliza horizontalmente com margem vertical */
+    max-width: 800px; /* Largura máxima */
+}
+
+/* Estilos para a seção de imagens na educação */
+.educacao .imagens {
+    display: flex;
+    flex-direction: column; /* Organiza elementos em coluna */
+    margin-right: 20px; /* Espaçamento à direita */
+    width: 40%; /* Largura das imagens */
+}
+
+/* Estilos para imagens na educação */
+.educacao .imagens img {
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática para manter proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos para a descrição na educação */
+.educacao .descricao {
+    flex: 1; /* Ocupar espaço restante */
+    display: flex;
+    flex-direction: column; /* Organiza elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+/* Estilo para o título na descrição da educação */
+.educacao .descricao h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #e37ca8; /* Cor do texto */
+}
+
+/* Estilo para lista na descrição da educação */
+.educacao .descricao ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento */
+}
+
+/* Estilo para itens da lista na educação */
+.educacao .descricao ul li {
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para a seção de projetos */
+.projetos ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento */
+}
+
+/* Estilo para itens da lista de projetos */
+.projetos ul li {
+    margin-bottom: 20px; /* Espaçamento inferior */
+    display: flex;
+    flex-direction: column; /* Organiza elementos em coluna */
+}
+
+/* Estilo para títulos dos projetos */
+.projetos ul li strong {
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #e37ca8; /* Cor do texto */
+}
+
+/* Estilo para links dos projetos */
+.projetos ul li a {
+    margin-left: 10px; /* Espaçamento à esquerda */
+    color: #0275d8; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Estilo para descrição dos projetos */
+.projetos ul li p {
+    margin-top: 5px; /* Espaçamento superior */
+    font-size: 1em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-left: 1.2em; /* Espaçamento à esquerda */
+}
+
+/* Estilos para a seção de contato */
+.contato {
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: left; /* Alinha texto à esquerda */
+}
+
+/* Estilo para o título da seção de contato */
+.contato h2 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #e37ca8; /* Cor do texto */
+}
+
+/* Estilo para os rótulos dos campos de formulário */
+.contato label {
+    display: block; /* Exibe como bloco */
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo para campos de entrada de texto e email */
+.contato input[type="text"],
+.contato input[type="email"],
+.contato textarea {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.1em; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui borda e preenchimento nas dimensões */
+}
+
+/* Estilo para o campo de textarea */
+.contato textarea {
+    height: 200px; /* Altura do campo */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilo para o botão de envio */
+.contato button[type="submit"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    background-color: #e37ca8; /* Cor de fundo */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+/* Efeito de hover para o botão de envio */
+.contato button[type="submit"]:hover {
+    background-color: #c92c60; /* Cor de fundo ao passar o mouse */
+}
